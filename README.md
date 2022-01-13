@@ -11,7 +11,7 @@ All content in this repo is free. Everyone is allowed to use, copy, modify, merg
     {
         transform.position = player.position + offset;
     }
-'''
+```
 
 ### Count the score based on distance
 ```
