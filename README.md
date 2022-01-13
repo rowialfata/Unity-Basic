@@ -62,3 +62,36 @@ All content in this repo is free. Everyone is allowed to use, copy, modify, merg
         }
     }
 ```
+
+### Count down
+```
+private void Start()
+    {
+        //define the gameobject
+        mobil = GameObject.Find("car scene").gameObject;
+
+        //get the script from the gameobject
+        mesinMobil = mobil.GetComponent<CarEngine>();
+    }
+
+    void Update()
+    {
+        if( time > 1 )
+        {
+            time -= Time.deltaTime;
+            count.text = time.ToString("0");
+        }
+
+        else
+        {
+            count.enabled = false;
+            //activate the script of car engine
+            mesinMobil.enabled = true;
+        }
+    }
+```
+
+### 
+```
+
+```
