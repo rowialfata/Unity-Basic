@@ -91,6 +91,25 @@ private void Start()
     }
 ```
 
+### Collision
+```
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.tag == "Halangan2")
+        {
+            halangan2.Play();
+            ledakanKecil.Play();
+        }
+
+        if (collision.collider.tag == "Halangan")
+        {
+            ledakan.Play();
+            movement.enabled = false;
+            //FindObjectOfType<GameManager>().EndGame();
+        }
+    }
+```
+
 ### 
 ```
 
