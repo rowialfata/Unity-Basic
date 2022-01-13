@@ -2,6 +2,7 @@
 All content in this repo is free. Everyone is allowed to use, copy, modify, merge, publish, distribute, sublicense, and/or sell it with and/or without any permission.
 
 ### Camera follow player
+```
 public class FollowPlayer : MonoBehaviour
 {
     public Transform player;
@@ -12,4 +13,5 @@ public class FollowPlayer : MonoBehaviour
     {
         transform.position = player.position + offset;
     }
-}
+}'''
+```
